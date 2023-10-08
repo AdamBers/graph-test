@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ff9640;
+}
+
+h1 {
+  margin: 40px 0 20px 40px;
+  color: #5d5b59;
+  text-decoration: underline;
+}
+
+.tables,
+.graphs {
+  width: 100%;
+  text-align: center;
+  background-color: #f7f7f7e6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.table {
+  display: inline-block;
+  margin: 10px 20px;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  width: 280px;
+  margin-bottom: 5px;
+  table-layout: fixed;
+}
+
+button {
+  width: 280px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #ff9640;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  width: 60px;
+  height: 30px;
+}
+
+.deleteRow {
+  width: 70px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+.graph {
+  margin-bottom: 20px;
+  min-height: 350px;
+  max-width: 90%;
+  resize: both;
+  overflow: auto;
+  margin: auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff964099;
+  position: relative;
+}
+
+.graph::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent #ff0000 transparent;
+}
